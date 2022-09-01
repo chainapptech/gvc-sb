@@ -1,0 +1,54 @@
+@import '../../assets/styles/variables';
+
+.dropDownNav {
+    .dropDownButton {
+        background-color: $white;
+        border-radius: 8px;
+        padding: 20px 23px;
+        filter: none;
+        box-shadow: 0px 1px 42px rgba(52, 93, 200, 0.06),
+            0px 1px 3px rgba(87, 119, 168, 0.1);
+
+        p {
+            color: $body;
+            font-size: 16px;
+            line-height: 24px;
+            font-family: $--worksans-semibold;
+        }
+    }
+
+    p {
+        color: $body;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: $--worksans-semibold;
+        font-weight: 600;
+    }
+
+    .dropdown-toggle {
+        color: $feint;
+    }
+    .btn-primary {
+        border: none;
+    }
+    .btn-primary:hover {
+        background-color: $white !important;
+    }
+
+    .dropdown-menu {
+        margin-top: 20px;
+        box-shadow: 0px 1px 42px rgba(52, 93, 200, 0.06),
+            0px 1px 3px rgba(87, 119, 168, 0.1) !important;
+    }
+
+    .dropdown-item {
+        padding: 20px 23px;
+        &:active {
+            background-color: transparent;
+        }
+    }
+
+    .test-class {
+        color: $--test-variable;
+    }
+}

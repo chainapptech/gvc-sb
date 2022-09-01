@@ -1,0 +1,59 @@
+@import '../../assets/styles/variables';
+
+.form-switch {
+    max-width: fit-content;
+    font-family: $--worksans-medium;
+    font-size: 16px;
+    line-height: 24px;
+    color: $headings;
+
+    .form-switch-input {
+            transition: none;
+
+        &[type='switch'] {
+            background-color: $foreground;
+            border-color: $foreground;
+            box-shadow: 0px 1px 2px rgba(49, 73, 135, 0.06),
+                0px 1px 3px rgba(52, 93, 200, 0.1);
+
+            &:checked,
+            &:indeterminate {
+                background-color: $primary;
+                border-color: $primary;
+            }
+
+            &:disabled,
+            &[disabled] {
+                background-image: none;
+                background-color: rgba($baseLight, 0.4);
+                opacity: 1;
+                box-shadow: none;
+                border: 1px rgba($baseLight, 0.4);
+            }
+        }
+    }
+}
+
+.form-switch-sm {
+    font-size: 14px;
+    line-height: 20px;
+
+    .form-switch-input {
+        &[type='switch'] {
+            border-color: rgba($baseLight, 0.2);
+        }
+
+        &:disabled,
+        &[disabled] {
+            background-color: rgba($baseLight, 0.4);
+            border-color: rgba($baseLight, 0.4);
+        }
+    }
+}
+
+.form-switch-input[disabled] ~ .form-switch-label,
+.form-switch-input:disabled ~ .form-switch-label {
+    color: rgba($baseLight, 0.4);
+}
+
+

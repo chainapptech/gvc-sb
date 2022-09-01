@@ -1,0 +1,23 @@
+@import '../../assets/styles/variables';
+
+.sidebarLinks {
+    font-family: $--worksans-semibold;
+    color: $body;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 20px 0px 20px 22px;
+    &:hover {
+        color: $body;
+    }
+}
+
+.active {
+    color: $headings!important;
+    background-color: $ghost;
+    border-radius: 12px;
+    padding: 20px 0px 20px 22px;
+}
+
+.link-margin {
+    margin-right: 42px;
+}

@@ -1,0 +1,54 @@
+@import '../../assets/styles/variables';
+
+.checkbox-wrapper {
+    max-width: fit-content;
+    font-family: $--worksans-medium;
+    font-size: 16px;
+    line-height: 24px;
+    color: $headings;
+
+    .form-check-input {
+        &[type='checkbox'] {
+            background-color: $foreground;
+            border-color: $foreground;
+            @include shadow-sm();
+
+            &:checked,
+            &:indeterminate {
+                background-color: $primary;
+                border-color: $primary;
+            }
+
+            &:disabled,
+            &[disabled] {
+                background-image: none;
+                background-color: $baseLight-400;
+                opacity: 1;
+                box-shadow: none;
+                border: 1px $baseLight-400;
+            }
+        }
+    }
+
+    &.form-check-sm {
+        font-size: 14px;
+        line-height: 20px;
+
+        .form-check-input {
+            &[type='checkbox'] {
+                border-color: $baseLight-200;
+            }
+
+            &:disabled,
+            &[disabled] {
+                background-color: $baseLight-400;
+                border-color: $baseLight-400;
+            }
+        }
+    }
+
+    .form-check-input[disabled] ~ .form-check-label,
+    .form-check-input:disabled ~ .form-check-label {
+        color: $baseLight-400;
+    }
+}

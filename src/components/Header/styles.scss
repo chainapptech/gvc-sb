@@ -1,0 +1,9 @@
+@import '../../assets/styles/variables';
+
+.icon-padding {
+    padding-left: 19px;
+
+    @media only screen and (max-width: $--breakpoints-sm) {
+        padding-left: 8px !important;
+    }
+}

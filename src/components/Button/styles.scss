@@ -1,0 +1,218 @@
+@import '../../assets/styles/variables';
+
+.button-component {
+    gap: 10px;
+    width: fit-content;
+    font-family: $--worksans-semibold;
+    padding: 10px 16px;
+    border-radius: 8px;
+    max-height: 44px;
+
+    &.btn-sm,
+    &.btn-xs {
+        padding: 8px 16px;
+        h5 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .icon-button-svg {
+            margin: 2px -6px;
+        }
+    }
+
+    &.btn-lg {
+        padding: 7px 20px;
+        h5 {
+            font-size: 18px;
+            line-height: 30px;
+        }
+        .icon-button-svg {
+            width: 20px;
+            height: 20px;
+            margin: 5px -8px;
+        }
+    }
+
+    &.btn-xl,
+    &.btn-xxl {
+        padding: 13px 24px;
+        h5 {
+            font-size: 20px;
+            line-height: 32px;
+        }
+        .icon-button-svg {
+            width: 24px;
+            height: 24px;
+            margin: 5px -6px;
+        }
+    }
+
+    h5 {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .icon-button-svg {
+        width: 16px;
+        height: 16px;
+        margin: 4px -2px;
+    }
+
+    img {
+        max-width: none;
+    }
+}
+
+.btn-primary {
+    background-color: $primary;
+    color: $white;
+    border: none;
+
+    &:hover {
+        color: $white;
+        background-color: $blueLight-500;
+    }
+
+    &:focus,
+    &:active,
+    &:focus:active {
+        color: $white;
+        background-color: $blueLight-300;
+        box-shadow: none;
+    }
+
+    &:disabled,
+    &[disabled] {
+        background-color: $grey-disabled;
+        color: $grey-disabled-darker;
+    }
+
+    &.btn-destructive {
+        background-color: $redLight-500;
+        color: $white;
+
+        @include shadow-sm();
+
+        &:hover {
+            color: $white;
+            background-color: $redLight-600;
+        }
+
+        &:focus,
+        &:active,
+        &:focus:active {
+            color: $white;
+            background-color: $redLight-700;
+            box-shadow: none;
+        }
+
+        &:disabled,
+        &[disabled] {
+            opacity: $disabled-opacity;
+        }
+    }
+
+    &.btn-ghost {
+        background-color: $ghost;
+        color: $body;
+        border: 2px solid $ghost;
+
+        &:hover {
+            color: $blueLight-600;
+            border: 2px solid $blueLight-600;
+            background-color: $white;
+        }
+
+        &:focus,
+        &:active,
+        &:focus:active {
+            color: $blueLight-600;
+            background-color: $white;
+            border: 2px solid $blueLight-300;
+            box-shadow: none;
+        }
+
+        &:disabled,
+        &[disabled] {
+            color: $baseLight;
+            background-color: $baseLight-200;
+            opacity: $disabled-opacity;
+        }
+    }
+}
+
+.btn-secondary {
+    background-color: $greyLight-50;
+    color: $baseLight;
+    border: 1px solid $greyLight-100;
+
+    @include shadow-sm();
+
+    &:hover {
+        color: $baseLight;
+        background-color: $baseLight-50;
+        border: 1px solid $baseLight-500;
+    }
+
+    &:focus,
+    &:active,
+    &:focus:active {
+        color: $baseLight;
+        background-color: $greyLight-100;
+        border: 1px $greyLight-100;
+    }
+
+    &:disabled,
+    &[disabled] {
+        opacity: $disabled-opacity;
+    }
+}
+
+//Media queries
+@media only screen and (max-width: $--breakpoints-sm) {
+    .button-component {
+        padding: 8px 16px;
+        max-height: 36px;
+        h5 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media only screen and (min-width: $--breakpoints-lg) {
+    .button-component {
+        padding: 7px 20px;
+        h5 {
+            font-size: 18px;
+            line-height: 30px;
+        }
+        .icon-button-svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+@media only screen and (min-width: $--breakpoints-xl) {
+    .button-component {
+        padding: 13px 24px;
+        max-height: 58px;
+        h5 {
+            font-size: 20px;
+            line-height: 32px;
+        }
+        .icon-button-svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

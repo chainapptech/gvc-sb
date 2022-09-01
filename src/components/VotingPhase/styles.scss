@@ -1,0 +1,11 @@
+@import '../../assets/styles/variables';
+
+.voting-phase-heading {
+    font-family: $--poppins-bold;
+    font-weight: 700;
+    font-size: 24px;
+
+    @media only screen and (max-width: $--breakpoints-md) {
+        margin-top: 32px;
+    }
+}

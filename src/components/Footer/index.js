@@ -12,25 +12,27 @@ import YouTube from '../../assets/images/YouTube-color.svg'
 
 const Footer = () => {
     return (
-        <Row className="flex-lg-row flex-column align-items-center justify-content-lg-between text-center divider g-0 pt-3">
+        <Row className="flex-lg-row flex-column align-items-center justify-content-lg-between text-center text-lg-start divider g-0 pt-3">
             <Col>
                 <Image
                     fluid
                     src={CatalystLogo}
                     alt="Catalyst Logo"
-                    className="m-auto m-lg-0 p-lg-0"
+                    className="m-auto m-lg-0 p-lg-0 pb-3"
                 />
             </Col>
             <Col className="d-flex flex-lg-row flex-column">
-                <p className="pe-lg-3 footer-text pt-4 pb-3 pb-lg-0 pt-lg-0 m-lg-0">
+                <p className="pe-lg-3 footer-text m-0 pt-3 pb-3 pb-lg-0 pt-lg-0 m-lg-0 text-lg-start">
                     Sign up to mailing list
                 </p>
-                <p className='footer-text pt-4 pb-3 pt-lg-0 pb-lg-0 m-lg-0'>Cardano proposals</p>
+                <p className="footer-text pt-3 m-0 pb-3 pt-lg-0 pb-lg-0 m-lg-0 text-lg-end">
+                    Cardano proposals
+                </p>
             </Col>
-            <Col className="d-flex justify-content-lg-end justify-content-center">
+            <Col className="d-flex justify-content-lg-end justify-content-center pt-4 p-lg-0">
                 <Image fluid src={Discord} className="pe-3" />
                 <Image fluid src={Telegram} className="pe-3" />
-                <Image fluid src={YouTube} className="" />
+                <Image fluid src={YouTube} />
             </Col>
         </Row>
     )

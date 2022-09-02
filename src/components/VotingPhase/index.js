@@ -25,33 +25,51 @@ const VotingPhase = () => {
                     <CardItem
                         img={CardImage1}
                         variant={'left'}
-                        title={<h3>Phase 1</h3>}
+                        title={
+                            <h3 className="voting-phase-card-heading">
+                                Phase 1 <br />
+                                <span className="voting-phase-card-subheading">
+                                    Registration
+                                </span>
+                            </h3>
+                        }
                         content={
-                            'Voters have to register their wallets in order to vote in Funds. You are already registered!'
+                            <p className="voting-phase-card-text">
+                                Voters have to register their wallets in order
+                                to vote in Funds. You are already registered!
+                            </p>
                         }
                         className={'p-2'}
                         cardHeight={'h-100'}
                     />
                 </Col>
-                <Col sm={12} md={4} className="d-none d-md-block d-lg-block">
+                <Col sm={12} md={4} className="d-none d-md-none d-lg-block">
                     <CardItem
                         img={CardImage2}
                         variant={'left'}
-                        title={<h3>Phase 2</h3>}
-                        content={
-                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisl nibh.'
+                        title={
+                            <h3 className="voting-phase-card-heading">
+                                Phase 2 <br />
+                                <span className="voting-phase-card-subheading">
+                                    Snapshot
+                                </span>
+                            </h3>
                         }
                         className={'p-2'}
                         cardHeight={'h-100'}
                     />
                 </Col>
-                <Col sm={12} md={4} className="d-none d-md-block d-lg-block">
+                <Col sm={12} md={4} className="d-none d-md-none d-lg-block">
                     <CardItem
                         img={CardImage3}
                         variant={'left'}
-                        title={<h3>Phase 3</h3>}
-                        content={
-                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisl nibh.'
+                        title={
+                            <h3 className="voting-phase-card-heading">
+                                Phase 3 <br />
+                                <span className="voting-phase-card-subheading">
+                                    Voting
+                                </span>
+                            </h3>
                         }
                         className={'p-2'}
                         cardHeight={'h-100'}

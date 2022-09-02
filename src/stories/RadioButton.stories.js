@@ -6,7 +6,8 @@ export default {
     component: RadioButton,
     argTypes: {
         size: {
-            control: { type: 'select', options: ['Default', 'small'] },
+            type: 'select',
+            options: ['Default', 'small'],
         },
     },
 }

@@ -6,10 +6,9 @@
         0px 1px 3px rgba(87, 119, 168, 0.1);
 
     .card-item-content {
-        padding-left: 96px;
         padding-bottom: 138px;
         margin: 0;
-        p {
+        .card-item-text {
             color: $body;
             font-family: 'Work Sans Regular';
             font-weight: 400;
@@ -32,12 +31,10 @@
             font-weight: 700;
             font-size: 53px;
             line-height: 60px;
-            padding-top: 83px;
             margin-bottom: 24px;
 
             @media only screen and (max-width: $--breakpoints-md) {
                 font-size: 30px;
-                padding-top: 57px;
             }
         }
     }

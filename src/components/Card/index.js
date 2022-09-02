@@ -38,10 +38,10 @@ const CardItem = ({
                             <Col
                                 sm={12}
                                 lg={8}
-                                className="d-flex flex-column justify-content-center"
+                                className="d-flex flex-column justify-content-between"
                             >
                                 <Card.Title>{title}</Card.Title>
-                                <p>{content}</p>
+                                <div className='card-item-text'>{content}</div>
                                 {buttonText ? (
                                     <CardButton className={'mt-3'}>
                                         {buttonText}
@@ -55,7 +55,7 @@ const CardItem = ({
                             <Col
                                 md={12}
                                 lg={8}
-                                className="d-flex flex-column justify-content-center"
+                                className="d-flex flex-column justify-content-between"
                             >
                                 <Card.Title>{title}</Card.Title>
                                 <p>{content}</p>

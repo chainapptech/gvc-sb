@@ -7,7 +7,8 @@ export default {
     component: Checkbox,
     argTypes: {
         size: {
-            control: { type: 'select', options: ['Default', 'small'] },
+            type: 'select',
+            options: ['Default', 'small'],
         },
     },
 }

@@ -10,9 +10,8 @@
         color: $body;
     }
 }
-
-.active {
-    color: $headings!important;
+.activeState {
+    color: $headings !important;
     background-color: $ghost;
     border-radius: 12px;
     padding: 20px 0px 20px 22px;

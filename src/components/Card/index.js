@@ -41,7 +41,7 @@ const CardItem = ({
                                 className="d-flex flex-column justify-content-between"
                             >
                                 <Card.Title>{title}</Card.Title>
-                                <div className='card-item-text'>{content}</div>
+                                <div className="card-item-text">{content}</div>
                                 {buttonText ? (
                                     <CardButton className={'mt-3'}>
                                         {buttonText}
@@ -58,7 +58,7 @@ const CardItem = ({
                                 className="d-flex flex-column justify-content-between"
                             >
                                 <Card.Title>{title}</Card.Title>
-                                <p>{content}</p>
+                                <div className="card-item-text">{content}</div>
                                 {buttonText ? (
                                     <CardButton className={'mt-3'}>
                                         {buttonText}

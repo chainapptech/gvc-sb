@@ -1,10 +1,11 @@
+import { useState } from 'react'
 import { Modal as BootstrapModal } from 'react-bootstrap'
 
 import { connectWallet } from '../../lib/walletConnect'
 import walletSvg from '../../assets/images/wallet-icon.svg'
+import WarningMessage from '../WarningMessage'
 
 import './styles.scss'
-import { useState } from 'react'
 
 const wallets = [
     { label: 'Litewallet', type: 'lightWallet' },
@@ -13,7 +14,7 @@ const wallets = [
     { label: 'Nami', type: 'nami' },
 ]
 
-const Modal = ({ show, onClose, setConnectedWallet }) => {
+const Modal = ({ show, onClose, setConnectedWallet, label }) => {
     const [warningShow, setWarningShow] = useState(false)
 
     const connect = async (walletType) => {
@@ -36,6 +37,8 @@ const Modal = ({ show, onClose, setConnectedWallet }) => {
             <BootstrapModal.Body>
                 <div className="d-flex flex-column justify-content-center w-100">
                     <p>Choose the wallet you want to connect with</p>
+                    <WarningMessage label="The selected wallet is not elegible for a DRep application because it hasn’t voted before. Please select another wallet." />
+
                     {wallets.map(({ label, type }) => (
                         <div
                             className="wallet"

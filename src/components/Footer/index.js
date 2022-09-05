@@ -21,8 +21,11 @@ const Footer = () => {
                     className="m-auto m-lg-0 p-lg-0 pb-3"
                 />
             </Col>
-            <Col className="d-flex flex-lg-row flex-column">
-                <p className="pe-lg-3 footer-text m-0 pt-3 pb-3 pb-lg-0 pt-lg-0 m-lg-0 text-lg-start">
+            <Col
+                lg={6}
+                className="d-flex flex-lg-row flex-column justify-content-lg-center"
+            >
+                <p className="pe-lg-5 footer-text m-0 pt-3 pb-3 pb-lg-0 pt-lg-0 m-lg-0 text-lg-start">
                     Sign up to mailing list
                 </p>
                 <p className="footer-text pt-3 m-0 pb-3 pt-lg-0 pb-lg-0 m-lg-0 text-lg-end">

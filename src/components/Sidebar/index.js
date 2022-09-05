@@ -48,7 +48,7 @@ const Sidebar = () => {
                 <Nav.Link
                     key={name}
                     className={`d-flex align-items-center sidebarLinks ${
-                        linkState === name.toLowerCase() ? 'active' : ''
+                        linkState === name.toLowerCase() ? 'activeState' : ''
                     }`}
                     onClick={() => setLinkState(name.toLowerCase())}
                 >

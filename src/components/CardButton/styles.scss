@@ -14,8 +14,9 @@ button.card-button-container.btn.btn-primary {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 200ms;
     @include primary();
-    @media only screen and (max-width: $--breakpoints-xs) {
-        padding: 16px 34px;
+    @media only screen and (max-width: $--breakpoints-sm) {
+        min-width: 276px;
+        padding: 16px 33px;
     }
     &:hover {
         transition-property: all;
@@ -39,7 +40,7 @@ button.card-button-container.btn.btn-primary {
         font-weight: 600;
         line-height: 30px;
 
-        @media only screen and (max-width: $--breakpoints-xs) {
+        @media only screen and (max-width: $--breakpoints-sm) {
             font-size: 16px;
             line-height: 24px;
         }

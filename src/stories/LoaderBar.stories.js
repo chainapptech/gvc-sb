@@ -6,4 +6,9 @@ export default {
     component: LoaderBar,
 }
 
-export const Template = (args) => <LoaderBar {...args} />
+const Template = (args) => <LoaderBar {...args} />
+
+export const Default = Template.bind({})
+Default.args = {
+    now: 40,
+}

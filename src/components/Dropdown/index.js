@@ -32,7 +32,7 @@ const dropdownLinks = [
         name: 'Delegation',
         icon: DelegationIcon,
     },
-]
+] 
 const Dropdown = ({ className }) => {
     const [itemName, setItemName] = useState(HOME)
     const [icons, setIcons] = useState(HomeIcon)

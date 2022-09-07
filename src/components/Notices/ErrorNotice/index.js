@@ -1,11 +1,11 @@
 import React from 'react'
 
-import warningIcon from '../../assets/images/warningIcon.svg'
+import warningIcon from '../../../assets/images/warningIcon.svg'
 import './styles.scss'
 
-const WarningMessage = ({ label }) => {
+const ErrorNotice = ({ label }) => {
     return (
-        <div className="message">
+        <div className="error-notice message">
             <span className="message-text">
                 <img src={warningIcon} alt="warning" />
                 {label}
@@ -14,4 +14,4 @@ const WarningMessage = ({ label }) => {
     )
 }
 
-export default WarningMessage
+export default ErrorNotice

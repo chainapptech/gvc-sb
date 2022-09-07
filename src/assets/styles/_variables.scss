@@ -22,6 +22,7 @@ $--worksans-semibold: 'Work Sans SemiBold';
 $--worksans-medium: 'Work Sans Medium';
 $--worksans-regular: 'Work Sans Regular';
 $--poppins-bold: 'Poppins Bold';
+$--roboto-regular: 'Roboto Mono Regular';
 
 // Breakpoints
 
@@ -96,6 +97,12 @@ $--breakpoints-xxl: 1400px;
     font-style: normal;
     font-weight: 700;
 }
+@font-face {
+    font-family: 'Roboto Mono Regular';
+    src: url('../fonts/RobotoMono/RobotoMono-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
 
 // Colors
 $primary: #7c89f7; // $--main-button-background-color
@@ -120,6 +127,7 @@ $redLight-600: #dc2828;
 $redLight-700: #ba1c1c;
 $greyLight-50: #fdfdfd;
 $greyLight-100: #f4f4f5;
+$greyLight-200: #e4e4e7;
 
 // Button Disabled
 $disabled-opacity: 0.4;
@@ -135,4 +143,9 @@ $grey-disabled-darker: #99a0a4;
 @mixin shadow-sm {
     filter: drop-shadow(0px 1px 2px rgba(49, 73, 135, 0.06))
         drop-shadow(0px 1px 3px rgba(52, 93, 200, 0.1));
+}
+
+@mixin box-shadow-shadow-sm {
+    box-shadow: 0px 1px 2px rgba(49, 73, 135, 0.06),
+        0px 1px 3px rgba(52, 93, 200, 0.1);
 }

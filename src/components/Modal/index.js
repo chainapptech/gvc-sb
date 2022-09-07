@@ -3,7 +3,7 @@ import { Modal as BootstrapModal } from 'react-bootstrap'
 
 import { connectWallet } from '../../lib/walletConnect'
 import walletSvg from '../../assets/images/wallet-icon.svg'
-import WarningMessage from '../WarningMessage'
+import ErrorNotice from '../Notices/ErrorNotice'
 
 import './styles.scss'
 
@@ -37,7 +37,7 @@ const Modal = ({ show, onClose, setConnectedWallet, label }) => {
             <BootstrapModal.Body>
                 <div className="d-flex flex-column justify-content-center w-100">
                     <p>Choose the wallet you want to connect with</p>
-                    <WarningMessage label="The selected wallet is not elegible for a DRep application because it hasn’t voted before. Please select another wallet." />
+                    <ErrorNotice label="We could not connect to your wallet. Please try again." />
 
                     {wallets.map(({ label, type }) => (
                         <div

@@ -1,13 +1,13 @@
 import React from 'react'
 
-import WarningMessage from '../components/WarningMessage'
+import ErrorNotice from '../components/Notices/ErrorNotice'
 
 export default {
-    title: 'Components/WarningMessage',
-    component: WarningMessage,
+    title: 'Components/Notices/ErrorNotice',
+    component: ErrorNotice,
 }
 
-const Template = (args) => <WarningMessage {...args} />
+const Template = (args) => <ErrorNotice {...args} />
 
 export const Default = Template.bind({})
 Default.args = {

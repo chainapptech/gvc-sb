@@ -3,8 +3,9 @@ import { Button as ButtonComponent } from 'react-bootstrap'
 import threeDots from '../../assets/images/threeDots.svg'
 import avatar from '../../assets/images/Avatar.png'
 import './styles.scss'
+import ProfileButton from '../ProfileButton'
 
-const Button = ({ onClick, connectedWallet, children }) => {
+const Button = ({ onClick, connectedWallet, children, value, adressName }) => {
     const [walletBalance, setWalletBalance] = useState(0)
 
     const getWalletBalance = async () => {
@@ -19,19 +20,15 @@ const Button = ({ onClick, connectedWallet, children }) => {
     return (
         <>
             {connectedWallet ? (
-                <div className="profile-button">
-                    <img src={avatar} alt="" />
-                    <div className="balance-wrapper me-3">
-                        <p className="balance">{walletBalance} ADA</p>
-                        <p className="address">
-                            {connectedWallet.address.substring(0, 4)}...
-                            {connectedWallet.address.substring(
-                                connectedWallet.address.length - 4
-                            )}
-                        </p>
-                    </div>
-                    <img src={threeDots} alt="dots" />
-                </div>
+                <ProfileButton
+                    value={`${walletBalance} ADA`}
+                    adressName={`${connectedWallet.address.substring(
+                        0,
+                        4
+                    )}...${connectedWallet.address.substring(
+                        connectedWallet.address.length - 4
+                    )}`}
+                />
             ) : (
                 <ButtonComponent
                     variant="primary"

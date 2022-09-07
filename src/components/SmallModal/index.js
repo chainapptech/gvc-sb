@@ -1,12 +1,12 @@
 import React from 'react'
 import { Modal as BootstrapModal } from 'react-bootstrap'
-import ButtonComponent from '../Button'
+import ButtonComponent, { ButtonSizes, ButtonTypes } from '../Button'
 
 import './styles.scss'
 
 const SmallModal = ({ show }) => {
     return (
-        <BootstrapModal show={show} backdrop centered>
+        <BootstrapModal show={show} backdrop centered className="small-modal">
             <BootstrapModal.Header closeButton></BootstrapModal.Header>
             <BootstrapModal.Title>Are you sure?</BootstrapModal.Title>
             <BootstrapModal.Body>
@@ -18,15 +18,18 @@ const SmallModal = ({ show }) => {
                 </div>
                 <div className="d-flex">
                     <ButtonComponent
-                        className={`button-component btn-ghost btn-md d-flex align-items-center justify-content-center gx-2 me-3`}
+                        type={ButtonTypes.Ghost}
+                        size={ButtonSizes.MD}
+                        className={`me-3`}
                     >
                         {'No, continue'}
                     </ButtonComponent>
                     <ButtonComponent
-                        className={`button-component btn-primary btn-md d-flex align-items-center justify-content-center gx-2`}
+                        type={ButtonTypes.Primary}
+                        size={ButtonSizes.MD}
                     >
                         {'Yes, cancel'}
-                    </ButtonComponent>           
+                    </ButtonComponent>
                 </div>
             </BootstrapModal.Body>
         </BootstrapModal>

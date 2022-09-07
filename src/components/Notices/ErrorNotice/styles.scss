@@ -1,0 +1,26 @@
+@import '../../../assets/styles/variables';
+
+.error-notice {
+    &.message {
+        font-family: $--worksans-semibold;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: $--headings-text-color;
+        padding: 17px 24px;
+        border-radius: 12px;
+        margin-bottom: 32px;
+        background-color: $ghost;
+        @media only screen and (max-width: $--breakpoints-md) {
+            padding: 24px 5px;
+        }
+    }
+
+    .message-text {
+        display: flex;
+        align-items: center;
+        img {
+            padding-right: 16px;
+        }
+    }
+}

@@ -9,4 +9,8 @@ export default {
 const Template = (args) => <SingleRangeSlider {...args} />
 
 export const Default = Template.bind({})
-Default.args = {}
+Default.args = {
+    min: 0,
+    max: 100,
+    onChange: () => {},
+}

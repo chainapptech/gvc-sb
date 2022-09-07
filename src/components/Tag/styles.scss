@@ -1,0 +1,29 @@
+@import '../../assets/styles/variables';
+
+button.tag-component {
+    gap: 10px;
+    font-family: $--worksans-semibold;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: $body;
+    background-color: $ghost;
+    border-radius: 100px;
+    height: 44px;
+    max-height: 44px;
+    padding: 12px 24px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+
+    &:hover {
+        background-color: $foreground;
+        color: $body;
+    }
+
+    &:active,
+    &:focus {
+        background-color: $primary;
+        color: $white;
+    }
+}

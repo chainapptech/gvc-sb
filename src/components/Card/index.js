@@ -38,7 +38,7 @@ const CardItem = ({
                             <Col
                                 sm={12}
                                 lg={8}
-                                className="d-flex flex-column justify-content-between"
+                                className="d-flex flex-column justify-content-between align-items-center align-items-sm-start"
                             >
                                 <Card.Title>{title}</Card.Title>
                                 <div className="card-item-text">{content}</div>
@@ -55,7 +55,7 @@ const CardItem = ({
                             <Col
                                 md={12}
                                 lg={8}
-                                className="d-flex flex-column justify-content-between"
+                                className="d-flex flex-column justify-content-between align-items-center align-items-sm-start"
                             >
                                 <Card.Title>{title}</Card.Title>
                                 <div className="card-item-text">{content}</div>

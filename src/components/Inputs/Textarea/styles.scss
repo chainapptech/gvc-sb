@@ -1,34 +1,39 @@
 @import '../../../assets/styles/variables';
 
-label.form-label {
+.form-label {
     font-family: $--worksans-medium;
     color: $--content-text-color;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+    display: block;
 }
 
-input {
+.form-text {
+    font-family: $--worksans-medium;
+    color: $--content-text-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    display: block;
+}
+textarea {
     box-shadow: none;
 }
 
-input.form-control {
+textarea.form-control {
     font-family: $--worksans-regular;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
     background: $white;
+    box-shadow: 0px 1px 2px rgba(49, 73, 135, 0.06),
+        0px 1px 3px rgba(52, 93, 200, 0.1);
     border-radius: 8px;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 200ms;
-    font-family: $--worksans-regular;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
     color: $--headings-text-color;
-    border: none;
-    @include box-shadow-shadow-sm();
     &::placeholder {
         font-family: $--worksans-regular;
         font-weight: 400;
@@ -38,15 +43,17 @@ input.form-control {
     }
     &:hover {
         background: $white;
-        border: 1px solid $greyLight-200;
+        border: 1px solid #e4e4e7;
+        box-shadow: 0px 1px 2px rgba(49, 73, 135, 0.06),
+            0px 1px 3px rgba(52, 93, 200, 0.1);
         border-radius: 8px;
-        @include box-shadow-shadow-sm();
     }
     &:focus {
-        border: none;
-        @include box-shadow-shadow-sm();
+        box-shadow: 0px 1px 2px rgba(49, 73, 135, 0.06),
+            0px 1px 3px rgba(52, 93, 200, 0.1);
     }
     &:active {
-        @include box-shadow-shadow-sm();
+        box-shadow: 0px 1px 2px rgba(49, 73, 135, 0.06),
+            0px 1px 3px rgba(52, 93, 200, 0.1);
     }
 }

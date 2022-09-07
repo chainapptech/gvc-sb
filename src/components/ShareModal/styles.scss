@@ -1,22 +1,20 @@
 @import '../../assets/styles/variables';
 
-.small-modal {
-    button.button-component {
-        min-width: 125px;
-        @media only screen and (max-width: $--breakpoints-sm) {
-            padding: 10px 16px;
-            max-height: none;
-        }
-        h5 {
-            @media only screen and (max-width: $--breakpoints-sm) {
-                font-size: 16px;
-            }
-        }
-    }
+$modal-header-height: 40px;
 
+.share-modal {
     .modal {
         padding: 0;
     }
+
+    .modal-content {
+        max-width: 400px;
+    }
+
+    .modal-dialog-centered {
+        justify-content: center;
+    }
+
     .modal-body {
         display: flex;
         flex-direction: column;
@@ -36,6 +34,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
+        margin: 0;
     }
 
     .modal-dialog {
@@ -56,5 +55,41 @@
         &:hover {
             background-color: $ghost;
         }
+    }
+
+    .icons-row {
+        padding: 32px 0;
+        gap: 16px;
+    }
+
+    .modal-dialog {
+        .modal-content {
+            .modal-title {
+                padding: 0 16px 16px 16px;
+                margin-top: calc((-1 * $modal-header-height) / 2);
+            }
+
+            .modal-body {
+                p {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .bottom-part {
+        gap: 16px;
+
+        .form-control {
+            padding: 12px 16px;
+        }
+    }
+
+    .radius-16 {
+        border-radius: 16px;
+    }
+
+    .icon-height {
+        max-height: 48px;
     }
 }

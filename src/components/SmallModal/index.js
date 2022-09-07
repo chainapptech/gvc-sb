@@ -11,7 +11,7 @@ const SmallModal = ({ show }) => {
             <BootstrapModal.Title>Are you sure?</BootstrapModal.Title>
             <BootstrapModal.Body>
                 <div>
-                    <p className="modal-text">
+                    <p className="small-modal-text">
                         Are you sure you want to cancel? Any progress won’t be
                         saved.
                     </p>

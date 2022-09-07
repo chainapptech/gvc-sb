@@ -3,6 +3,12 @@
 $modal-header-height: 40px;
 
 .share-modal {
+    @media only screen and (max-width: $--breakpoints-sm) {
+        button.card-button-container.btn.btn-primary {
+            min-width: 100%;
+        }
+    }
+
     .modal {
         padding: 0;
     }

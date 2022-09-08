@@ -1,0 +1,26 @@
+@import '../../assets/styles/variables';
+
+.adaWallet-text-top {
+    font-family: $--worksans-regular;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: $body;
+}
+
+.adaWallet-text-middle {
+    font-family: $--poppins-bold;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: $headings;
+}
+.adaWallet-text-bottom {
+    font-family: $--worksans-regular;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $headings;
+}
+
+

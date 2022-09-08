@@ -1,0 +1,177 @@
+@import '../../assets/styles/variables';
+
+// .wallet-modal {
+//     button.button-component {
+//         min-width: 125px;
+//         @media only screen and (max-width: $--breakpoints-sm) {
+//             padding: 10px 16px;
+//             max-height: none;
+//         }
+//         h5 {
+//             @media only screen and (max-width: $--breakpoints-sm) {
+//                 font-size: 16px;
+//             }
+//         }
+//     }
+
+// .modal {
+//     padding: 0;
+// }
+// .modal-body {
+//     display: flex;
+//     flex-direction: column;
+// }
+
+.large-modal {
+    width: 664px;
+    min-height: 852px;
+
+    .modal-header {
+        &.header-normal {
+            flex-direction: row;
+        }
+
+        &.header-reverse {
+            flex-direction: row-reverse;
+        }
+        .btn-close {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            opacity: 1;
+            box-sizing: border-box;
+            padding: unset;
+            margin: unset;
+            background: $background
+                url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23576788%27%3e%3cpath d=%27M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z%27/%3e%3c/svg%3e')
+                center/15px auto no-repeat;
+
+            &:hover {
+                background-color: $ghost;
+            }
+        }
+    }
+
+    .modal-content {
+        min-height: 100%;
+        border-radius: 12px;
+
+        .modal-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: flex-start;
+            padding: 0;
+            min-height: 100%;
+            min-width: 100%;
+        }
+    }
+
+    .modal-footer {
+        border-top: none;
+        justify-content: center;
+        padding: 15px 0 0 0;
+
+        > * {
+            margin: 0;
+        }
+
+        .card-button-container.btn.btn-primary {
+            min-width: 100%;
+            max-width: 621px;
+            @media only screen and (max-width: $--breakpoints-md) {
+                width: 100%;
+                max-width: 297px;
+            }
+        }
+    }
+}
+
+// .wallet-registration {
+//     font-family: $--poppins-bold;
+//     color: $--headings-text-color;
+//     font-weight: 700;
+//     font-size: 30px;
+//     line-height: 52px;
+//     text-align: left;
+//     padding: 0;
+//     @media only screen and (max-width: $--breakpoints-md) {
+//         font-size: 24px;
+//         line-height: 34px;
+//     }
+// }
+
+// .step-number {
+//     font-family: $--worksans-semibold;
+//     color: $body;
+//     font-weight: 600;
+//     font-size: 16px;
+//     line-height: 24px;
+//     text-align: right;
+//     padding: 0;
+//     span {
+//         color: $headings;
+//     }
+//     @media only screen and (max-width: $--breakpoints-md) {
+//         padding: 0;
+//     }
+// }
+
+// .modal-text {
+//     font-family: $--worksans-regular;
+//     color: $--content-text-color;
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 28px;
+// }
+
+// .modal-title-heading {
+//     font-family: $--worksans-semibold;
+//     font-weight: 600;
+//     font-size: 20px;
+//     line-height: 30px;
+//     color: $headings;
+//     padding: 16px 0;
+//     margin: 0;
+//     text-align: left;
+//     @media only screen and (max-width: $--breakpoints-md) {
+//         font-size: 18px;
+//         line-height: 24px;
+//     }
+// }
+// .modal-title-text {
+//     font-family: $--worksans-regular;
+//     font-weight: 400;
+//     font-size: 16px;
+//     line-height: 32px;
+//     color: $body;
+//     text-align: left;
+//     padding: 16px 0;
+//     margin: 0;
+// }
+
+// .modal-dialog .modal-content .modal-body p {
+//     padding-bottom: 0;
+//     padding-left: 292px;
+//     padding-right: 292px;
+//     @media only screen and (max-width: $--breakpoints-md) {
+//         padding-left: 132px;
+//         padding-right: 132px;
+//     }
+// }
+// .modal-dialog .modal-content .modal-body .wallet-modal-button {
+//     width: 100%;
+//     max-width: 621px;
+//     @media only screen and (max-width: $--breakpoints-md) {
+//         width: 100%;
+//         max-width: 297px;
+//     }
+// }
+
+// .modal-dialog {
+//     @media only screen and (max-width: $--breakpoints-md) {
+//         margin: 0.5rem 0;
+//         padding: 0 15px;
+//     }
+// }

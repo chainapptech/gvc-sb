@@ -1,5 +1,4 @@
 import React from 'react'
-import './styles.scss'
 import ArrowButton from '../../assets/svg/ArrowButton/ArrowButton'
 import '../../assets/svg/ArrowButton/ArrowButton.scss'
 import PropTypes from 'prop-types'

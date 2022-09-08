@@ -1,0 +1,108 @@
+@import '../../assets/styles/variables';
+
+$modal-header-height: 40px;
+
+.profile-card {
+    width: 100%;
+    border-radius: 8px;
+
+    @media only screen and (max-width: $--breakpoints-sm) {
+        button.card-button-container.btn.btn-primary {
+            min-width: 100%;
+        }
+    }
+
+    @include box-shadow-profile-card();
+
+    .modal-content {
+        gap: 24px;
+
+        .modal-title {
+            font-family: $--poppins-bold;
+            color: $headings;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 34px;
+            padding: unset;
+            text-align: left;
+        }
+
+        .modal-body {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            p {
+                padding-bottom: 0;
+            }
+
+            .content-row {
+                width: 100%;
+
+                .content-col {
+                    gap: 16px;
+
+                    .profile-card-description {
+                        gap: 8px;
+
+                        .name-description {
+                            p.profile-card-profile-name {
+                                font-family: $--worksans-semibold;
+                                font-weight: 600;
+                                font-size: 18px;
+                                line-height: 24px;
+                                letter-spacing: -0.015em;
+                                color: $headings;
+                                margin-top: unset;
+                                margin-bottom: unset;
+                                text-align: left;
+                            }
+                        }
+                        .job-description {
+                            p.profile-card-job-description {
+                                font-family: $--worksans-medium;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 24px;
+                                color: $body;
+                                margin-top: unset;
+                                margin-bottom: unset;
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bottom-part {
+                gap: 16px;
+                width: 100%;
+
+                button.card-button-container.btn.btn-primary {
+                    min-width: 100%;
+                    padding: 10px 62px;
+                    box-shadow: none;
+
+                    &:hover {
+                        box-shadow: none;
+                    }
+
+                    &.profile-card-button-text {
+                        p {
+                            line-height: 24px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.modal-dialog-centered {
+        justify-content: center;
+    }
+
+    .radius-16 {
+        border-radius: 16px;
+    }
+}

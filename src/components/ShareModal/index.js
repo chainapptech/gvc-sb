@@ -12,10 +12,8 @@ import FacebookIcon from '../../assets/svg/FacebookIcon'
 const MODAL_TITLE = 'Share'
 const MODAL_BODY = 'Share this profile on'
 
-function ShareModal({ show }) {
-    const [inputValue, setInputValue] = useState(
-        'votecenter.io/addrj7893y78923r'
-    )
+function ShareModal({ show, value }) {
+    const [inputValue, setInputValue] = useState(value)
 
     function onClick() {
         navigator.clipboard.writeText(inputValue)

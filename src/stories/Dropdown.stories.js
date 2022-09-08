@@ -5,4 +5,9 @@ export default {
     component: Dropdown,
 }
 
-export const Default = () => <Dropdown />
+const Template = (args) => <Dropdown {...args} />
+
+export const Default = Template.bind({})
+Default.args = {
+    dropdownMenu: true,
+}

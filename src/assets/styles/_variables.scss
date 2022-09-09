@@ -1,22 +1,3 @@
-// Background colors
-$--main-background-color: #f8f9fc;
-$--main-button-background-color: #7c89f7;
-$--sidebar-active-link-background-color: #e9edf9;
-$--progress-bar-foreground-color: #d2d7e8;
-$--dropdown-hover-background-color: #f8f9fc;
-
-// Text/Font colors
-$--main-button-text-color: #ffffff;
-$--headings-text-color: #0d112f;
-$--content-text-color: #576788;
-$--footer-text-color: #576788;
-$--card-headings-text-color: #0d112f;
-$--card-content-text-color: #576788;
-$--sidebar-active-link-text-color: #0d112f;
-$--sidebar-unactive-link-text-color: #576788;
-$--dropdown-arrow-color: #a0abc0;
-$--test-variable: #000;
-
 // Fonts
 $--worksans-semibold: 'Work Sans SemiBold';
 $--worksans-medium: 'Work Sans Medium';
@@ -106,11 +87,11 @@ $--breakpoints-xxl: 1400px;
 
 // Colors
 $primary: #7c89f7; // $--main-button-background-color
-$headings: #0d112f; // $--sidebar-active-link-text-color,$--card-headings-text-color, $--headings-text-color
+$headings: #0d112f; // $--sidebar-active-link-text-color,$--card-headings-text-color, $headings
 $background: #f8f9fc; // $--main-background-color,
 $foreground: #d2d7e8;
 $white: #ffffff; //$--main-button-text-color
-$body: #576788; //$--sidebar-unactive-link-text-color,$--card-content-text-color, $--footer-text-color, $--content-text-color
+$body: #576788; //$--sidebar-unactive-link-text-color,$--card-content-text-color, $body, $body
 $ghost: #e9edf9; //$--sidebar-active-link-background-color
 $feint: #a0abc0; // $--dropdown-arrow-color
 $baseLight: #1a1a1a;

@@ -6,7 +6,7 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 20px;
-        color: $--headings-text-color;
+        color: $headings;
         padding: 17px 24px;
         border-radius: 12px;
         margin-bottom: 32px;
@@ -19,8 +19,12 @@
     .message-text {
         display: flex;
         align-items: center;
+
         img {
             padding-right: 16px;
+            @media only screen and (max-width: $--breakpoints-md) {
+                padding-left: 15px;
+            }
         }
     }
 }

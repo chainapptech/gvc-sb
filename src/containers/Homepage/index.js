@@ -17,8 +17,9 @@ import CardImage1 from '../../assets/images/card-background-1.png'
 import CardImage2 from '../../assets/images/card-background-2.png'
 import CardImage3 from '../../assets/images/card-background-3.png'
 import CardImage4 from '../../assets/images/card-background-4.png'
+// import LargeModal from '../../components/LargeModal'
 
-const Homepage = () => {
+const Homepage = ({ dropdownMenu }) => {
     const [isConnectClicked, setIsConnectClicked] = useState(false)
     const [connectedWallet, setConnectedWallet] = useState(null)
 
@@ -46,7 +47,10 @@ const Homepage = () => {
                 <Col sm={12} md={9} className="pt-3 px-md-0">
                     <Row>
                         <Col sm={12} className="pe-lg-0 d-md-none d-block">
-                            <DropdownNav className={'w-100 pt-3'} />
+                            <DropdownNav
+                                className={'w-100 pt-3'}
+                                dropdownMenu={true}
+                            />
                         </Col>
                         <Col sm={12}>
                             <CardItem
@@ -92,6 +96,7 @@ const Homepage = () => {
                                     'Lorem ipsum dolor sit amet, consectetur ad ipiscing elit. Aliquam rutrum molestie lectus, eget volutpat sem venenatis quis.'
                                 }
                             />
+                            {/* <LargeModal show={true} backButton={true} /> */}
                             <VotingPhase />
                             <Footer />
                         </Col>

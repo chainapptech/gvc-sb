@@ -6,8 +6,9 @@ export default {
     title: 'Components/Inputs/Input',
     component: Input,
     argTypes: {
-        type: { type: 'select', options: ['email', 'text'] },
-    },
+        type: 'select',
+        options: ['email', 'text'],
+    }
 }
 
 const Template = (args) => <Input {...args} />

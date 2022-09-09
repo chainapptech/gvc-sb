@@ -32,7 +32,7 @@ $modal-header-height: 40px;
 
     .modal-title {
         font-family: $--poppins-bold;
-        color: $--headings-text-color;
+        color: $headings;
         font-weight: 700;
         font-size: 30px;
         line-height: 45px;
@@ -40,7 +40,7 @@ $modal-header-height: 40px;
 
     .modal-text {
         font-family: $--worksans-regular;
-        color: $--content-text-color;
+        color: $body;
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;

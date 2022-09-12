@@ -27,7 +27,7 @@ function ShareModal({ show, value }) {
                 <div>
                     <p className="modal-text">{MODAL_BODY}</p>
                 </div>
-                <Row className="icons-row gx-0">
+                <Row className="icons-row g-2">
                     <Col>
                         <ButtonComponent
                             variant={ButtonVariants.IconButton}

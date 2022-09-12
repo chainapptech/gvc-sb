@@ -47,12 +47,31 @@
         margin-top: 20px;
         box-shadow: 0px 1px 42px rgba(52, 93, 200, 0.06),
             0px 1px 3px rgba(87, 119, 168, 0.1) !important;
+
+        a.dropdown-item:first-of-type:hover {
+            color: $body;
+            background-color: $background;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+
+        a.dropdown-item:last-of-type:hover {
+            color: $body;
+            background-color: $background;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
     }
 
     .dropdown-item {
         padding: 20px 23px;
         &:active {
             background-color: transparent;
+        }
+
+        &:hover {
+            color: $body;
+            background-color: $background;
         }
     }
 }

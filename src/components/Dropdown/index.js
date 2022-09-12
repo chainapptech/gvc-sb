@@ -98,7 +98,7 @@ const Dropdown = ({ className, dropdownMenu }) => {
                         <p className="mb-0">{itemName}</p>
                     </div>
                 </DropdownNav.Toggle>
-                <DropdownNav.Menu className="w-100 border-0">
+                <DropdownNav.Menu className="w-100 border-0 p-0">
                     {dropdownMainMenuLinks.map(({ link, name, icon }) => (
                         <DropdownNav.Item
                             key={name}
@@ -141,7 +141,7 @@ const Dropdown = ({ className, dropdownMenu }) => {
                     <p className="mb-0">{linkName}</p>
                 </div>
             </DropdownNav.Toggle>
-            <DropdownNav.Menu className="w-100 border-0">
+            <DropdownNav.Menu className="w-100 border-0 p-0">
                 {dropdownLinks.map(({ link, name, color }) => (
                     <DropdownNav.Item
                         key={name}

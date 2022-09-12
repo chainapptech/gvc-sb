@@ -1,13 +1,22 @@
 import React from 'react'
-import { Modal as BootstrapModal } from 'react-bootstrap'
+import { Col, Modal as BootstrapModal, Row } from 'react-bootstrap'
 import CardButton from '../CardButton'
 import ModalBackButton from '../../assets/svg/ModelBackButton/ModalBackButton'
 import '../../assets/svg/ModelBackButton/ModelBackButton.scss'
 
 import './styles.scss'
 import PropTypes from 'prop-types'
+import ButtonComponent, { ButtonTypes } from '../Button'
 
-const LargeModal = ({ show, textHeading, backButton }) => {
+const LargeModal = ({
+    show,
+    textHeading,
+    backButton,
+    buttonText,
+    secondButtonText,
+    onClick,
+    secondOnClick,
+}) => {
     return (
         <BootstrapModal
             show={show}
@@ -27,7 +36,33 @@ const LargeModal = ({ show, textHeading, backButton }) => {
             <BootstrapModal.Body></BootstrapModal.Body>
 
             <BootstrapModal.Footer>
-                <CardButton>{'Next'}</CardButton>
+                {secondButtonText ? (
+                    <Row className="w-100">
+                        <Col>
+                            <ButtonComponent
+                                type={ButtonTypes.Ghost}
+                                className={'w-100 button-styles'}
+                            >
+                                {secondButtonText}
+                            </ButtonComponent>
+                        </Col>
+                        <Col>
+                            <ButtonComponent
+                                type={ButtonTypes.Primary}
+                                className={'w-100 button-styles'}
+                            >
+                                {buttonText}
+                            </ButtonComponent>
+                        </Col>
+                    </Row>
+                ) : (
+                    <ButtonComponent
+                        type={ButtonTypes.Primary}
+                        className={'w-100 button-styles'}
+                    >
+                        {buttonText}
+                    </ButtonComponent>
+                )}
             </BootstrapModal.Footer>
         </BootstrapModal>
     )
@@ -35,6 +70,7 @@ const LargeModal = ({ show, textHeading, backButton }) => {
 
 LargeModal.propTypes = {
     show: PropTypes.bool,
+    secondButtonText: PropTypes.string,
     backButton: PropTypes.bool,
 }
 

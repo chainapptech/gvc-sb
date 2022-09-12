@@ -13,14 +13,14 @@ Default.args = {
     stakedAdaValue: '532',
     delegatedADAvalue: '4,403',
 }
-export const MiddleCol = Template.bind({})
-MiddleCol.args = {
+export const Primary = Template.bind({})
+Primary.args = {
     stakedAdaName: 'Staked ADA',
     stakedAdaValue: '4,403',
     delegatedADAvalue: '10 delegations ',
 }
-export const ThirdCol = Template.bind({})
-ThirdCol.args = {
+export const Secondary = Template.bind({})
+Secondary.args = {
     stakedAdaName: 'Total voting power',
     stakedAdaValue: '4,935',
     delegatedADAvalue: 'Available for voting',

@@ -14,4 +14,6 @@ Default.args = {
     show: true,
     textHeading: '',
     backButton: true,
+    buttonText: 'Primary',
+    secondButtonText: 'Secondary',
 }

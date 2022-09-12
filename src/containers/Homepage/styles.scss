@@ -2,15 +2,13 @@
 
 .container-wrapper {
     padding: 27.5px 40px 43px 21px !important;
-    background-color: $--main-background-color;
+    background-color: $background;
 }
 @media only screen and (max-width: $--breakpoints-sm) {
     .container-wrapper {
         padding: 16px 16px !important;
     }
 }
-
-
 
 .card-item-single {
     padding-top: 83px;

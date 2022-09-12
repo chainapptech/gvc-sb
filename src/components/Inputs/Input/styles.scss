@@ -2,7 +2,7 @@
 
 label.form-label {
     font-family: $--worksans-medium;
-    color: $--content-text-color;
+    color: $body;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
@@ -26,15 +26,15 @@ input.form-control {
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    color: $--headings-text-color;
-    border: none;
+    color: $headings;
+    border: 1px solid transparent;
     @include box-shadow-shadow-sm();
     &::placeholder {
         font-family: $--worksans-regular;
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
-        color: $--content-text-color;
+        color: $body;
     }
     &:hover {
         background: $white;
@@ -43,7 +43,7 @@ input.form-control {
         @include box-shadow-shadow-sm();
     }
     &:focus {
-        border: none;
+        border: 1px solid transparent;
         @include box-shadow-shadow-sm();
     }
     &:active {

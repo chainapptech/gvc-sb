@@ -78,7 +78,7 @@ const Dropdown = ({ className, dropdownMenu }) => {
     }
 
     // still need this to fix lg={4} -> d-md-none d-block
-    if (!dropdownMenu) {
+    if (dropdownMenu) {
         return (
             <DropdownNav
                 className={`${className} dropDownNav align-items-center`}

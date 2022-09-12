@@ -1,14 +1,13 @@
 @import '../../assets/styles/variables';
 
-
 .divider {
-    border-top: 1px solid $--sidebar-active-link-background-color;
+    border-top: 1px solid $ghost;
 }
 
 .footer-text {
     font-size: 16px;
     line-height: 24px;
     font-family: $--worksans-medium;
-    color: $--footer-text-color;
+    color: $body;
     font-weight: 500;
 }

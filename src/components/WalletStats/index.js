@@ -2,14 +2,12 @@ import React from 'react'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-// import '../../assets/svg/PlusSign/PlusSign.scss'
-
-// import ButtonComponent, {
-//     ButtonTypes,
-//     ButtonSizes,
-//     ButtonVariants,
-// } from '../Button'
-// import PlusSign from '../../assets/svg/PlusSign/PlusSign'
+import ButtonComponent, {
+    ButtonTypes,
+    ButtonSizes,
+    ButtonVariants,
+} from '../Button'
+import PlusSign from '../../assets/svg/PlusSign'
 
 import './styles.scss'
 
@@ -25,11 +23,12 @@ const WalletStats = ({ stakedAdaValue, delegatedADAvalue, stakedAdaName }) => {
             <Col className="p-0">
                 <p className="adaWallet-text-bottom m-0">{delegatedADAvalue}</p>
             </Col>
-            {/* <ButtonComponent
+            <ButtonComponent
                 variant={ButtonVariants.IconButton}
                 type={ButtonTypes.Ghost}
+                size={ButtonSizes.XS}
                 iconButton={<PlusSign />}
-            /> */}
+            />
         </Row>
     )
 }

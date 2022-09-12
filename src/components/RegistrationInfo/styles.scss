@@ -1,0 +1,44 @@
+@import '../../assets/styles/variables';
+
+.drep-wrapper {
+    min-height: 90vh;
+    .drep-content {
+        @media only screen and (max-width: $--breakpoints-md) {
+            justify-content: space-between;
+            min-height: 90vh;
+            max-height: 90vh;
+            padding-top: 40vh;
+        }
+
+        .drep-heading {
+            font-family: $--poppins-bold;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 58px;
+            color: $headings;
+            margin-bottom: 32px;
+            @media only screen and (max-width: $--breakpoints-md) {
+                font-size: 30px;
+                line-height: 45px;
+            }
+        }
+
+        .drep-text {
+            font-family: $--worksans-regular;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+            color: $body;
+            margin-bottom: 32px;
+        }
+        .drep-btn-wrapper {
+            .button-component.btn-primary {
+                @media only screen and (max-width: $--breakpoints-md) {
+                    min-width: 100%;
+                    padding-top: 14px;
+                    padding-bottom: 14px;
+                }
+            }
+        }
+    }
+}

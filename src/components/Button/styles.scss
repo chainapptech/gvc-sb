@@ -6,7 +6,6 @@
     font-family: $--worksans-semibold;
     padding: 10px 16px;
     border-radius: 8px;
-    max-height: 44px;
 
     &.btn-sm,
     &.btn-xs {
@@ -56,8 +55,8 @@
     }
 
     svg {
-        width: 22px;
-        height: 22px;
+        max-width: 22px;
+        max-height: 22px;
     }
 
     .icon-button-svg {
@@ -73,7 +72,7 @@
     &.btn-primary {
         background-color: $primary;
         color: $white;
-        border: none;
+        border: 2px solid $primary;
 
         svg {
             path {
@@ -140,6 +139,12 @@
                 color: $blueLight-600;
                 border: 2px solid $blueLight-600;
                 background-color: $white;
+
+                svg {
+                    path {
+                        stroke: $blueLight-600;
+                    }
+                }
             }
 
             &:focus,
@@ -149,6 +154,12 @@
                 background-color: $white;
                 border: 2px solid $blueLight-300;
                 box-shadow: none;
+
+                svg {
+                    path {
+                        stroke: $blueLight-600;
+                    }
+                }
             }
 
             &:disabled,
@@ -193,111 +204,6 @@
         }
     }
 }
-
-// .btn-primary {
-//     background-color: $primary;
-//     color: $white;
-//     border: none;
-
-//     &:hover {
-//         color: $white;
-//         background-color: $blueLight-500;
-//     }
-
-//     &:focus,
-//     &:active,
-//     &:focus:active {
-//         color: $white;
-//         background-color: $blueLight-300;
-//         box-shadow: none;
-//     }
-
-//     &:disabled,
-//     &[disabled] {
-//         background-color: $grey-disabled;
-//         color: $grey-disabled-darker;
-//     }
-
-//     &.btn-destructive {
-//         background-color: $redLight-500;
-//         color: $white;
-
-//         @include shadow-sm();
-
-//         &:hover {
-//             color: $white;
-//             background-color: $redLight-600;
-//         }
-
-//         &:focus,
-//         &:active,
-//         &:focus:active {
-//             color: $white;
-//             background-color: $redLight-700;
-//             box-shadow: none;
-//         }
-
-//         &:disabled,
-//         &[disabled] {
-//             opacity: $disabled-opacity;
-//         }
-//     }
-
-//     &.btn-ghost {
-//         background-color: $ghost;
-//         color: $body;
-//         border: 2px solid $ghost;
-
-//         &:hover {
-//             color: $blueLight-600;
-//             border: 2px solid $blueLight-600;
-//             background-color: $white;
-//         }
-
-//         &:focus,
-//         &:active,
-//         &:focus:active {
-//             color: $blueLight-600;
-//             background-color: $white;
-//             border: 2px solid $blueLight-300;
-//             box-shadow: none;
-//         }
-
-//         &:disabled,
-//         &[disabled] {
-//             color: $baseLight;
-//             background-color: $baseLight-200;
-//             opacity: $disabled-opacity;
-//         }
-//     }
-// }
-
-// .btn-secondary {
-//     background-color: $greyLight-50;
-//     color: $baseLight;
-//     border: 1px solid $greyLight-100;
-
-//     @include shadow-sm();
-
-//     &:hover {
-//         color: $baseLight;
-//         background-color: $baseLight-50;
-//         border: 1px solid $baseLight-500;
-//     }
-
-//     &:focus,
-//     &:active,
-//     &:focus:active {
-//         color: $baseLight;
-//         background-color: $greyLight-100;
-//         border: 1px $greyLight-100;
-//     }
-
-//     &:disabled,
-//     &[disabled] {
-//         opacity: $disabled-opacity;
-//     }
-// }
 
 //Media queries
 @media only screen and (max-width: $--breakpoints-sm) {

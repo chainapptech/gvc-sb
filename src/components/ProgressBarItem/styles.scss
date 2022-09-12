@@ -26,7 +26,7 @@
     padding: 16px 0;
 
     @media only screen and (max-width: $--breakpoints-md) {
-        background-color: $--sidebar-active-link-background-color;
+        background-color: $ghost;
         border-radius: 12px;
         padding: 16px;
         margin: 24px 0;

@@ -25,6 +25,10 @@ $modal-header-height: 40px;
             line-height: 34px;
             padding: unset;
             text-align: left;
+
+            @media only screen and (max-width: 400px) {
+                font-size: 22px;
+            }
         }
 
         .modal-body {
@@ -34,6 +38,12 @@ $modal-header-height: 40px;
 
             p {
                 padding-bottom: 0;
+
+                &.card-content-text {
+                    word-wrap: break-word;
+                    text-align: left;
+                    width: 100%;
+                }
             }
 
             .content-row {
@@ -41,6 +51,16 @@ $modal-header-height: 40px;
 
                 .content-col {
                     gap: 16px;
+
+                    .card-content-text {
+                        font-family: $--worksans-regular;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 28px;
+
+                        margin-top: unset;
+                        margin-bottom: unset;
+                    }
 
                     .profile-card-description {
                         gap: 8px;
@@ -77,6 +97,10 @@ $modal-header-height: 40px;
             .bottom-part {
                 gap: 16px;
                 width: 100%;
+
+                .not-profile-card-button {
+                    width: 100%;
+                }
 
                 button.card-button-container.btn.btn-primary {
                     min-width: 100%;
